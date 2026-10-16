@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            color: white;
+            align-items: center;
+        }
+        ul{
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            text-transform: uppercase;
+        }
+        .main{
+            display: flex;
+            margin-top: 100px;
+        }
+        .left{
+            margin-left: 10%;
+        }
+        .right{
+            margin-left: 20%;
+            animation: move 5s ease infinite alternate;
+            transition: 1s ease;
+            img{
+                 border-radius: 10px;
+            }
+           
+        }
+
+        @keyframes move{
+            0%,100%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-50PX);
+            }
+        }
+
+        .product{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 90px;
+        }
+        .card{
+            width: 300px;
+            height: 220px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px;
+            text-align: center;
+            transition: 1s ease;
+            img{
+                margin: 10px;
+                border-radius: 5px;
+            }
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        button{
+            color: black;
+            background: white;
+            border-radius: 5px;
+            /* border: none; */
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech</h1>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>product</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="left">
+           <h1>Smart watch pro</h1>
+           <p>stay connected,track your fitness and manage your daily tasks with the all-new smart watch pro</p>
+           <button>Buy now</button>
+        </div>
+    
+        <div class="right">
+          <img src="watch.jpg" alt="" width="300px">
+        </div>
+    </div>
+
+    <div class="product">
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <!-- ctrl+shift+4 -->
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="card">
+            <img src="watch.jpg" alt="" width="200px">
+            <h3>smart watch</h3>
+            <p>$99</p>
+            <button>Add to cart</button>
+        </div>
+
+
+    </div>
+    <footer>&copy; 2026 Techstore. All rights reserved</footer>
+</body>
+</html>
